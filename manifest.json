@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+
+  "name": "Get Away",
+  "description": "Los elementos huyen y las imagenes son matrix",
+  "version": "1.0",
+
+"permissions": [
+    "activeTab"
+  ],
+
+  "content_scripts": [{
+        "js": ["jquery.min.js", "background.js"],
+        "matches": [ "http://*/*", "https://*/*" ] 
+  }],
+
+  "browser_action": {
+    "default_icon": "matriz.png",
+    "default_title": "Todos huyan!!"
+  }
+
+}
